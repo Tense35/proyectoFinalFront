@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+body
+{
+    display: flex;
+    background-color: #0f0f0f !important;
+}
+
+.root
+{
+    width: 100%;
+}
+
+.pag
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pag-container
+{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
