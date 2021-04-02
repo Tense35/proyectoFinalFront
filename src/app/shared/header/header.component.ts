@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit
 
     //Arreglo de MenuItems. Nos servirá para definir los items del header
     items: MenuItem[] = [];
+    termino: string = '';
 
     constructor() { }
 

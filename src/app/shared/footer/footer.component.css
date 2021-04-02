@@ -1,0 +1,173 @@
+/* Generales */
+
+.footer-division
+{
+    flex-direction: column;
+}
+
+.footer-block
+{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 20px 0px;
+    font-family: "Arial-Rounded-Bold";
+    color: #FFF;
+}
+
+/* Primera parte del footer (Imagen y links) */
+
+.footer-section
+{
+    width: 30%;
+}
+
+.footer-section img 
+{
+    width: 130px;
+}
+
+.footer-section ul
+{
+    padding: 0;
+    padding-left: 20px;
+}
+
+.footer-section ul li 
+{
+    list-style: none;
+    list-style-image: url("../../../assets/img/globales/Triangulo.png");
+}
+
+.footer-section a 
+{
+    color: #FFF;
+    text-decoration: none;
+    font-family: "Arial-Rounded";
+}
+
+.footer-section a:hover 
+{
+    color: #FF2F73;
+    text-decoration: none;
+}
+
+/* Newsletter */
+
+.news-section
+{
+    width: 50%;
+}
+
+.news-text
+{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.news-input 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.news-input button
+{
+    border: 2px #FF2F73 solid;
+    color: #FFF;
+    width: 140px;
+    font-family: "Arial-Rounded-Bold";
+    padding: 5px 5px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(17, 3, 60, 0.3);
+}
+
+.news-input button:hover
+{
+    color: #FFF;
+    background-color: #FF2F73;
+}
+
+.news-input input
+{
+    width: calc(100% - 150px);
+    color: #FFF;
+    padding: 5px 5px;
+    border: 2px #FF2F73 solid;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: rgba(17, 3, 60, 0.3);
+}
+
+
+/* Eliminar efectos focus default de los inputs */
+
+input:focus, input.form-control:focus 
+{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+/* Cambiar color del placeholder del input */
+
+::-webkit-input-placeholder 
+{ 
+    color: #FFF; 
+} 
+
+:-moz-placeholder 
+{ 
+    /* Firefox 18- */ 
+    color: #FFF; 
+} 
+
+::-moz-placeholder 
+{ 
+    /* Firefox 19+ */ color: #FFF; 
+} 
+
+:-ms-input-placeholder 
+{ 
+    color: #FFF; 
+}
+
+/* Responsive */
+
+@media screen and (max-width: 840px) 
+{
+    .footer-block-news
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-block-news h3
+    {
+        text-align: center;
+    }
+    
+    .news-section
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 690px) 
+{
+    .footer-section:nth-child(1)
+    {
+        display: none;
+    }
+
+    .footer-section
+    {
+        width: 50%;
+    }
+}
