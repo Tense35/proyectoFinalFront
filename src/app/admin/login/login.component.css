@@ -1,0 +1,184 @@
+.pag 
+{
+    height: 100vh;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.centrado
+{
+    display: flex;
+    color: #FFF;
+    font-family: "Arial-Rounded-Bold";
+    flex-direction: row;
+    width: 80%;
+    height: 520px;
+}
+
+.login-section
+{
+    display: flex;
+    border: 1px;
+    padding: 15px;
+}
+
+.login-logo 
+{
+    background-color: #15044A;
+    justify-content: center;
+    width: 40%;
+    align-items: center;
+    border: 1px #15044A solid;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.login-logo img
+{
+    width: 200px;
+}
+
+.login-inputs
+{
+    background-color: #5222E3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    border: 1px #5222E3 solid;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.login-inputs > div 
+{
+    width: 85%;
+}
+
+.login-inputs h3 
+{
+    text-align: center;
+    font-size: 40px;
+    margin: 10px 0px;
+}
+
+.login-inputs form 
+{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5px;
+}
+
+.login-inputs input
+{
+    width: 100%;
+    background-color: transparent;
+    padding: 8px 2px 4px 2px;
+    color: #FFF;
+    border: 1px transparent solid;
+    border-bottom: 3px solid #FFF;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+.login-inputs input:focus
+{
+    border-bottom: 3px solid #FF2F73;
+}
+
+.login-button
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.login-button button
+{
+    padding: 5px 5px;
+    color: #FFF;
+    border: 3px solid #FF2F73;
+    border-radius: 8px;
+    margin: 0px 0px 15px 0px;
+    font-size: 23px;
+    background-color: transparent;
+}
+
+.login-button a 
+{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.login-button button:hover
+{
+    background-color: #FF2F73;
+}
+
+.login-button a:hover
+{
+    color: #FF2F73;
+}
+
+/* Cambiar color del placeholder del input */
+
+::-webkit-input-placeholder 
+{ 
+    color: #FFF; 
+} 
+
+:-moz-placeholder 
+{ 
+    /* Firefox 18- */ 
+    color: #FFF; 
+} 
+
+::-moz-placeholder 
+{ 
+    /* Firefox 19+ */ color: #FFF; 
+} 
+
+:-ms-input-placeholder 
+{ 
+    color: #FFF; 
+}
+
+/* Eliminar efectos focus default de los inputs */
+
+input:focus, input.form-control:focus 
+{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 900px) 
+{
+    .login-logo
+    {
+        display: none;
+    }
+
+    .login-inputs
+    {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 600px) 
+{
+    .centrado
+    {
+        width: 90%;
+    }
+}
+

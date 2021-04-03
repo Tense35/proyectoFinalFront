@@ -1,8 +1,8 @@
-<div class="pag">
+<div class="pag" *ngIf="!router.url.includes('/admin')">
     <app-header class="pag-container"></app-header>
 </div>
 <router-outlet></router-outlet>
-<div class="pag">
+<div class="pag" *ngIf="!router.url.includes('/admin')">
     <app-footer class="pag-container"></app-footer>
 </div>
 
